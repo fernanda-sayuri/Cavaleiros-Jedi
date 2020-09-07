@@ -1,0 +1,46 @@
+<mat-card>
+    <mat-card-title>Novo Cliente</mat-card-title>
+    <form #f="ngForm">
+        <mat-form-field>
+            <input matInput placeholder="Nome Completo"
+            [(ngModel)]="cliente.nome" name="nome" type="text" #nome="ngModel" required>
+            <span *ngIf="!cliente.nome && nome.touched">
+                Nome é obrigatório.
+            </span>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="idade"
+            [(ngModel)]="cliente.idade" name="idade" type="number" #idade="ngModel" required>
+            <span *ngIf="!idade.valid && idade.touched ">
+                Idade é obrigatória.
+            </span>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF"
+            [(ngModel)]="cliente.cpf" name="cpf" type="number" #cpf="ngModel" required>
+            <span *ngIf="!cpf.valid && cpf.touched ">
+                CPF é obrigatório.
+            </span>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone"
+            [(ngModel)]="cliente.tel" name="tel" type="tel" #telefone="ngModel" required>
+            <span *ngIf="!telefone.valid && telefone.touched ">
+                Telefone é obrigatório.
+            </span>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email"
+            [(ngModel)]="cliente.email" name="email" type="email" #email="ngModel" required email>
+            <span *ngIf="!email.valid && email.touched ">
+                Email é obrigatório no formato "email@email.com".
+            </span>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createCliente()" color="primary" [disabled]="!f.valid">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="cancelCliente()">
+        Cancelar
+    </button>
+</mat-card>

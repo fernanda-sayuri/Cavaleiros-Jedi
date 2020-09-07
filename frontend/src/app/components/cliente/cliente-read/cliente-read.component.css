@@ -1,0 +1,26 @@
+table {
+    width: 100%;
+}
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+.edit {
+    margin-right: 10px;
+    color: #673ab7;
+}
+.delete > i {
+    color: #e35e6b;
+    margin-right: 10px;
+}
+.info {
+    margin-right: 10px;
+    color: #673ab7;
+}
+.noRegister {
+    color: #ffd700;
+}
+.noRegister > span{
+    color:black;
+    margin-left: 10px;
+}

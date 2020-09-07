@@ -1,0 +1,44 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Fernanda Sayuri",
+      "idade": "20",
+      "cpf": 47495734850,
+      "tel": 11930063158,
+      "email": "fernanda.sayuri.ito@accenture.com"
+    },
+    {
+      "id": 2,
+      "nome": "Fernanda Sayuri 2",
+      "idade": 20,
+      "cpf": 47495734851,
+      "tel": 11930063159,
+      "email": "fernanda.sayuri.ito@accenture.com.br"
+    },
+    {
+      "nome": "Nome Teste",
+      "idade": 19,
+      "cpf": 122132423,
+      "tel": 1121421312,
+      "email": "fe@teste.com",
+      "id": 3
+    },
+    {
+      "nome": "kimimaru",
+      "idade": "213",
+      "cpf": "123",
+      "tel": "11949608493",
+      "email": "123",
+      "id": 6
+    },
+    {
+      "nome": "Kimimaru José Alves Ito",
+      "idade": 34,
+      "cpf": 43,
+      "tel": "1147541918",
+      "email": "kimimaru_ito@hotmail.comm",
+      "id": 8
+    }
+  ]
+}
