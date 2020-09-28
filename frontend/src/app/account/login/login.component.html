@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title>Entrar</mat-card-title>
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+        <mat-form-field>
+            <input matInput placeholder="Email"
+            [(ngModel)]="login.email" name="email" type="email" required email>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Senha"
+            [(ngModel)]="login.password" name="password" type="password" required>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button type="submit" color="primary" [disabled]="form.form.invalid">
+        Entrar
+    </button>
+    <button mat-raised-button type="button" [routerLink]="['/create-account']">
+        Criar conta
+    </button>
+</mat-card>

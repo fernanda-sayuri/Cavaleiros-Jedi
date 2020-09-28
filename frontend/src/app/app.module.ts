@@ -13,7 +13,7 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
-import { HomeComponent } from './views/home/home.component';
+import { Home2Component } from './views/home/home2.component';
 import { ClienteCrudComponent } from './views/cliente-crud/cliente-crud.component';
 import { RedDirective } from './directives/red.directive';
 import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
@@ -31,6 +31,10 @@ import { ClienteRead2Component } from './components/cliente/cliente-read2/client
 import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
 import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
 import { ClienteInfoComponent } from './components/cliente/cliente-info/cliente-info.component';
+import { LoginComponent } from './account/login/login.component';
+import { CreateAccountComponent } from './account/create-account/create-account.component';
+import { AuthenticationComponent } from './layout/authentication/authentication.component';
+import { HomeComponent } from './layout/home/home.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,7 @@ import { ClienteInfoComponent } from './components/cliente/cliente-info/cliente-
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent,
+    Home2Component,
     ClienteCrudComponent,
     RedDirective,
     ClienteCreateComponent,
@@ -46,7 +50,11 @@ import { ClienteInfoComponent } from './components/cliente/cliente-info/cliente-
     ClienteRead2Component,
     ClienteUpdateComponent,
     ClienteDeleteComponent,
-    ClienteInfoComponent
+    ClienteInfoComponent,
+    LoginComponent,
+    CreateAccountComponent,
+    AuthenticationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -65,6 +73,10 @@ import { ClienteInfoComponent } from './components/cliente/cliente-info/cliente-
     MatTableModule,
     MatPaginatorModule,
     MatSortModule
+  ],
+  exports: [
+    NavComponent,
+    FooterComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
