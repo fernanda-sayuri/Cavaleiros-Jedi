@@ -23,8 +23,8 @@ export class ClienteReadComponent implements OnInit {
     });
   }
   applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.clientes.filter = filterValue.trim().toLowerCase();
+    //const filterValue = (event.target as HTMLInputElement).value;
+    //this.clientes.filter = filterValue.trim().toLowerCase();
   }
 
 }
